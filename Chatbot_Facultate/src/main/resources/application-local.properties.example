@@ -1,0 +1,9 @@
+# ==========================================================================
+# Template. Copiaza acest fisier ca "application-local.properties"
+# (fara sufixul .example) si completeaza valorile reale.
+# application-local.properties este ignorat de Git, deci parolele
+# nu ajung niciodata in repository.
+# ==========================================================================
+
+spring.datasource.username=postgres
+spring.datasource.password=PAROLA_TA_DE_POSTGRES

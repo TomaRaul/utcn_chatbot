@@ -1,0 +1,19 @@
+# ==========================================================================
+# Template. Copiaza acest fisier ca "application-local.properties"
+# (fara sufixul .example) si completeaza valorile reale.
+# application-local.properties este ignorat de Git, deci parolele
+# nu ajung niciodata in repository.
+# ==========================================================================
+
+spring.datasource.username=postgres
+spring.datasource.password=PAROLA_TA_DE_POSTGRES
+
+# Cheie de semnare JWT: minim 32 de caractere (HS256).
+# Genereaza una noua, de exemplu in PowerShell:
+#   -join ((48..57) + (97..122) | Get-Random -Count 64 | % { [char]$_ })
+jwt.secret=CHEIE_JWT_LUNGA_GENERATA_ALEATOR
+
+# App Password de Gmail (16 caractere), generat din
+# https://myaccount.google.com/apppasswords - NU parola contului Google.
+spring.mail.username=adresa_ta@gmail.com
+spring.mail.password=APP_PASSWORD_GMAIL
